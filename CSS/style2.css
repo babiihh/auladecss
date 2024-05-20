@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(153, 219, 153);
+}
+
+.div-principal {
+    background-color: orange;
+    width: 357px;
+    height: 16px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+
+#inicio {
+    float: left;
+    padding-right: 17px;
+    color: rgb(29, 133, 119);
+}
+
+#p1 {
+    float: left;
+    padding-left: 17px;
+    padding-right: 17px;
+    color:rgb(0, 81, 255) ;
+}
+
+#p2 {
+    float: left;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: rgb(212, 103, 140);
+}
+
+#p3 {
+    padding-left: 17px;
+    color: purple;
+}

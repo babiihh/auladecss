@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body background="">        
+    <h1 align="center">Decimal para binário</h1>
+
+    <div align="center">
+        <p>
+            <label label for="decimal" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;"><b>Número decimal:</b></label>
+            <br>
+            <input name="decimal" id="id_decimal" style="height: 20px;"/>
+        </p>
+        <button onclick="converte_binario()">Converter</button>
+
+        <p>
+            <label label for="decimal" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;" id="decimal"><b>Binário:</b></label>
+            <br>
+            <input name="binario" id="id_binario" style="height: 20px;"/>
+        </p>
+    </div>
+
+    <script>
+        function converte_binario() {
+            var decimal = document.getElementById("id_decimal").value;
+            var binario = decimal_binario(Number(decimal));
+            document.getElementById("id_binario").value = binario;
+        }
+
+        function decimal_binario(numero) {
+            if (numero < 2) {
+                return numero.toString();
+            }
+            binario = "";
+            while (numero > 1) {
+                resto = numero % 2;
+                binario = resto.toString() + binario;
+                numero = Math.floor(numero / 2);
+            }
+            return numero.toString() + binario;
+        }
+    </script>
+</body>
+
+</html>
